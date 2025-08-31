@@ -1,0 +1,1 @@
+I edited the python package written by oscarhiggott that creates surface codes. The original file could create the standard ZX surface code. This edited version can be used to create a ZY surface code with Z-stabilizer and Y-stabilizer, with measure-Y qubit in the vertex and measure-Z qubit in the plaquette.
