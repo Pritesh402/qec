@@ -244,7 +244,7 @@ def add_idling_errors_and_save_circuit(thecircuit, b, d, p, ro, x, z, directory)
     modified_file_contents = process_file(path, p)  # adds some idling errors
 
     # Save to ZY/y or ZY/z directory, and use b=y or b=z in filename
-    newpath = f"{directory}/ZY/{b}/d={d},p={p},noise=ZY,b={b},r=3d,ro={ro},o={x[0]}{x[1]}{x[2]}{x[3]}{z[0]}{z[1]}{z[2]}{z[3]},idl=y.stim"
+    newpath = f"{directory}/ZY/{b}/d={d},p={p},noise=XB,b={b},r=3d,ro={ro},o={x[0]}{x[1]}{x[2]}{x[3]}{z[0]}{z[1]}{z[2]}{z[3]},st=ZY,idl=y.stim"
 
     # Ensure the output directory exists
     output_dir = os.path.dirname(newpath)
